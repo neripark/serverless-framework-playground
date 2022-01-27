@@ -1,6 +1,7 @@
 import type { AWS } from '@serverless/typescript';
 
 import hello from '@functions/hello';
+import lighthouse from '@functions/lighthouse';
 
 const serverlessConfiguration: AWS = {
   service: 'serverless-framework-playground',
@@ -20,7 +21,7 @@ const serverlessConfiguration: AWS = {
     lambdaHashingVersion: '20201221',
   },
   // import the function via paths
-  functions: { hello },
+  functions: { hello, lighthouse },
   package: { individually: true },
   custom: {
     esbuild: {
