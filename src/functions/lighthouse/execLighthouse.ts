@@ -52,4 +52,5 @@ export const execLighthouse = () => {
   return "done.";
 }
 
-execLighthouse();
+// このコメントアウトを外して `npx ts-node src/functions/lighthouse/execLighthouse.ts` で直接実行すると正常終了する
+// execLighthouse();
